@@ -1,0 +1,28 @@
+.main-review-info-div{
+    background-image: url(../svg/bg-pixels-3.svg);
+    aspect-ratio: 900/600;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position:center ;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    min-width: 50vw;
+    min-height: 80vh;
+    width: 60%;
+    height: 60%;
+    background-color: #18171a;
+    border: 1px solid var(--darkColor);
+}
+
+.info-div{
+    margin-left: 15%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(20deg,#ed1db9,#5ef4ff);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   line-height: 65px;
+}

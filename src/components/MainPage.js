@@ -1,7 +1,8 @@
 import '../styles/main-page.css'
 import { useState } from 'react'
 import ReviewWriter from './ReviewWriter'
-import ReviewSearcher from './ReviewSearcher';
+import ReviewSearcher from './ReviewSearcher'
+import ReviewInfo from './ReviewInfo'
 export default function MainPage() {
     const [stateReviewer, setStateReviewer] = useState('reviewer');
     //function that handles navbar clicks
@@ -14,7 +15,7 @@ export default function MainPage() {
     const component = {
         reviewer: <ReviewWriter />,
         searcher: <ReviewSearcher />,
-        info: null
+        info: <ReviewInfo /> 
     }
 
     // here is common layout for every functionality of the reviewer site
@@ -26,8 +27,8 @@ export default function MainPage() {
                     <div className="navbar-text-div">
                         <ul>
                             <li className='navbar-text' onClick={() => HandleNavClick('reviewer')}>Write review</li>
-                            <li className='navbar-text' onClick={() => HandleNavClick('searcher')}>First link</li>
-                            <li className='navbar-text' onClick={() => HandleNavClick('info')}>First link</li>
+                            <li className='navbar-text' onClick={() => HandleNavClick('searcher')}>Search review</li>
+                            <li className='navbar-text' onClick={() => HandleNavClick('info')}>Information</li>
                         </ul>
                     </div>
                     <div className='navbar-footer'>

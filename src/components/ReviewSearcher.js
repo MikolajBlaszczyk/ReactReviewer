@@ -7,7 +7,6 @@ export default function ReviewSearcher() {
         { Header: "Header", Content: "Content" },
         { Header: "Header", Content: "Content" },
         { Header: "Header", Content: "Content" },
-        { Header: "Header", Content: "Content" }
     ])
     const disp = displayArray.map(item => {
         return <ReviewDiv properties={{ ...item }} />

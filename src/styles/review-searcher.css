@@ -1,3 +1,6 @@
+:root{
+    --darkColor: #000000;
+}
 .main-review-searcher-div{
     background-image: url(../svg/bg-pixels-2.svg);
     aspect-ratio: 960/540;
@@ -6,10 +9,35 @@
     background-position: center;
     display: flex; 
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     min-width: 50vw;
     min-height: 90vh;
     width: 60%;
     height: 60%;
     background-color: #18171a;
-    border: 1px solid #000000;
+    border: 1px solid var(--darkColor);
+    overflow-y:scroll;
+}
+
+.search-div{
+    display: flex;
+    flex-direction: column;
+    margin:2.5%;
+    padding: 2.5%;
+    width: 50%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--darkColor);
+    margin-right: 25%;
+    background: linear-gradient(20deg,#ed1db9,#963dbf,#5ef4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0px 0px 5px 1px var(--darkColor);
+    transition: transform 0.2s ease;
+}
+
+.search-div:hover{
+    transform:scale(110%);
 }
