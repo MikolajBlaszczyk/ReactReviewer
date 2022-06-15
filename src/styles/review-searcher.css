@@ -1,0 +1,15 @@
+.main-review-searcher-div{
+    background-image: url(../svg/bg-pixels-2.svg);
+    aspect-ratio: 960/540;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    flex-direction: column;
+    min-width: 50vw;
+    min-height: 90vh;
+    width: 60%;
+    height: 60%;
+    background-color: #18171a;
+    border: 1px solid #000000;
+}
